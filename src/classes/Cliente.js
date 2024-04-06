@@ -12,9 +12,10 @@ export default class Cliente {
         let nombreValue = String(newNombre)
         this._nombre = nombreValue;
     }
+    //faltaba multiplicar por 21%
     calcularImpuesto(){
         return (`El impuesto total a pagar de ${this._nombre} es: 
-        ${(this.impuesto.montoBruto - this.impuesto.deducciones)}
+        ${(this.impuesto.montoBruto - this.impuesto.deducciones) * 0.21}
         `)
     }
 }
